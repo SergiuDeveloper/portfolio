@@ -78,9 +78,10 @@
             </p>
             <div class="about-links">
               <a id="link-linkedin" target="_blank" rel="noopener">LinkedIn</a>
+              <a id="link-github" target="_blank" rel="noopener">GitHub</a>
+              <a id="link-blog" target="_blank" rel="noopener">Blog</a>
               <a id="link-calendly" target="_blank" rel="noopener">Calendly</a>
               <a id="link-email">Email</a>
-              <a id="link-blog" target="_blank" rel="noopener">Blog</a>
             </div>
           </div>
           <div class="about-photo">
@@ -691,6 +692,7 @@
         name: "Sergiu Nistor",
         email: "sergiunistor.info@gmail.com",
         linkedin: "https://www.linkedin.com/in/sergiu-nistor-76786014a/",
+        github: "https://github.com/SergiuDeveloper/",
         calendly: "https://calendly.com/sergiunistor/30min",
         blog: "https://sergiunistor.substack.com/",
       };
@@ -707,6 +709,7 @@
       document.getElementById("link-linkedin").href = CONFIG.linkedin;
       document.getElementById("link-calendly").href = CONFIG.calendly;
       document.getElementById("link-blog").href = CONFIG.blog;
+      document.getElementById("link-github").href = CONFIG.github;
 
       // Contact section (email + linkedin only)
       document.getElementById("contact-email").href = "mailto:" + CONFIG.email;
