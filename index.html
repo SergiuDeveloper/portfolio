@@ -464,6 +464,18 @@
                 Built several systems at the intersection of ML infrastructure and deep learning research:
                 <ul>
                   <li>Currently researching YORO, a novel LLM architecture that runs the main reasoning block once and reuses its output across all generated tokens, replacing repeated full-model passes with a lightweight auxiliary network</li>
+                    <ul>
+                      <li>Novelty factor</li>
+                        <ul>
+                          <li>Custom LLM alternative architecture</li>
+                          <li>Custom masking algorithm to enable teacher forcing</li>
+                        </ul>
+                      <li>Finalized project stages</li>
+                        <ul>
+                          <li>Fine-tuning stage (Fine-tuning, Distillation)</li>
+                          <li>Full pretraining stage (Distributed Pretraining)</li>
+                        </ul>
+                    </ul>
                   <li>Built a pipelined layer-streaming system enabling full LLM inference at a fraction of the model's VRAM footprint by overlapping disk, CPU, and GPU transfers in parallel</li>
                   <li>Developed a runtime correctness checker for CUDA kernels using outlier-biased sampling with zero training graph impact</li>
                   <li>Implemented a GPU-accelerated deep learning framework in Mojo with custom autograd and explicit GPU kernel implementations</li>

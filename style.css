@@ -222,15 +222,23 @@ a:hover {
 }
 
 .timeline-desc ul {
-  margin: 8px 0 0 0;
+  margin: 4px 0 0 0;
   padding-left: 1.2em;
   font-size: 0.875rem;
   color: #444;
-  line-height: 1.6;
+  line-height: 1.4;
 }
 
-.timeline-desc ul li + li {
-  margin-top: 4px;
+.timeline-desc ul ul {
+  margin-top: 0;
+}
+
+.timeline-desc > ul > li {
+  margin-top: 8px;
+}
+
+.timeline-desc ul ul li {
+  margin-bottom: 2px;
 }
 
 /* ============================================================
