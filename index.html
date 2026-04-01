@@ -817,9 +817,16 @@
       // Mobile nav toggle
       const toggle = document.querySelector(".nav-toggle");
       const navLinks = document.querySelector(".nav-links");
-      toggle.addEventListener("click", () => navLinks.classList.toggle("open"));
+      const mainEl = document.querySelector("main");
+      toggle.addEventListener("click", () => {
+        navLinks.classList.toggle("open");
+        mainEl.classList.toggle("nav-open");
+      });
       navLinks.querySelectorAll("a").forEach((link) => {
-        link.addEventListener("click", () => navLinks.classList.remove("open"));
+        link.addEventListener("click", () => {
+          navLinks.classList.remove("open");
+          mainEl.classList.remove("nav-open");
+        });
       });
     </script>
   </body>
