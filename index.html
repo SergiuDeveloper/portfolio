@@ -48,11 +48,11 @@
         <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#papers">Papers</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#experience">Experience</a></li>
           <li><a href="#education">Education</a></li>
+          <li><a href="#papers">Papers</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#certifications">Certifications</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -86,6 +86,115 @@
           <div class="about-photo">
             <img src="assets/personal-photo.png" alt="My Photo" />
           </div>
+        </div>
+      </section>
+
+      <!-- EDUCATION -->
+      <section id="education" class="section section-alt">
+        <div class="container">
+          <h2 class="section-title">Education</h2>
+          <div class="edu-grid">
+            <div class="edu-item">
+              <div class="edu-degree">M.S. in Computer Science</div>
+              <div class="edu-date">2021 - 2023</div>
+              <div class="edu-school">University of Iasi</div>
+              <p class="edu-thesis">
+                <span class="edu-thesis-label">Thesis:</span>
+                <em
+                  >Efficient Deep Single-Image Super-Resolution on Mobile
+                  Devices</em
+                ><br/>
+                <span class="edu-thesis-label">Supervisor:</span>
+                <em>Prof. Dr. Radu Timofte</em><br/>
+                A study on deep learning-based methods for efficient mobile
+                SISR across multiple upscaling factors (×2, ×3, ×4), optimizing
+                first for PSNR then perceptual loss. Architectures were kept
+                deliberately shallow to minimize inference time, compensating
+                through increased width to maximize GPU parallelism.
+              </p>
+            </div>
+
+            <div class="edu-item">
+              <div class="edu-degree">B.S. in Computer Science</div>
+              <div class="edu-date">2017 - 2021</div>
+              <div class="edu-school">University of Iasi</div>
+              <p class="edu-thesis">
+                <span class="edu-thesis-label">Thesis:</span>
+                <em>Resource Streaming using a Peer-to-Peer Architecture</em><br/>
+                <span class="edu-thesis-label">Supervisor:</span>
+                <em>Prof. Dr. Lenuta Alboaie</em><br/>
+                Proposed a decentralized P2P resource streaming framework with
+                no imposed hierarchy, eliminating single points of failure and
+                reducing privacy risk. The architecture uses locality-aware
+                distributed hash tables (LDHTs) for per-node network state and a
+                custom epidemic protocol for network-wide information
+                propagation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PAPERS -->
+      <section id="papers" class="section">
+        <div class="container">
+          <h2 class="section-title">Papers</h2>
+          <ol class="pub-list">
+	    <li class="pub-item">
+              <div class="pub-title">
+                <a
+                  href="assets/publications/Halfway_Speculative_Decoding.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  >Halfway Speculative Decoding: Direct Acceptance Rate Optimization with
+Joint Drafter-Target Training</a
+                >
+              </div>
+	      <div class="pub-authors">Sergiu Nistor</div>
+            </li>
+
+            <li class="pub-item">
+              <div class="pub-title">
+                <a
+                  href="https://openaccess.thecvf.com/content/CVPR2023W/NTIRE/html/Conde_Efficient_Deep_Models_for_Real-Time_4K_Image_Super-Resolution._NTIRE_2023_CVPRW_2023_paper.html"
+                  target="_blank"
+                  rel="noopener"
+                  >Efficient Deep Models for Real-Time 4K Image
+                  Super-Resolution</a
+                >
+              </div>
+              <div class="pub-authors">
+                Marcos V. Conde, Eduard Zamfir, Radu Timofte, Sergiu Nistor
+              </div>
+              <div class="pub-venue">CVPR, NTIRE</div>
+            </li>
+
+            <li class="pub-item">
+              <div class="pub-title">
+                <a
+                  href="assets/publications/Efficient_Deep_Single_Image_Super_Resolution_on_Mobile_Devices.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  >Efficient Deep Single-Image Super-Resolution on Mobile
+                  Devices</a
+                >
+              </div>
+              <div class="pub-authors">Sergiu Nistor</div>
+            </li>
+
+            <li class="pub-item">
+              <div class="pub-title">
+                <a
+                  href="assets/publications/Resource_Streaming_Using_A_P2P_Architecture.pdf"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Resource Streaming using a Peer-to-Peer Architecture</a
+                >
+              </div>
+              <div class="pub-authors">Sergiu Nistor</div>
+            </li>
+          </ol>
         </div>
       </section>
 
@@ -351,146 +460,6 @@
         </div>
       </section>
 
-      <!-- PAPERS -->
-      <section id="papers" class="section">
-        <div class="container">
-          <h2 class="section-title">Papers</h2>
-          <ol class="pub-list">
-	    <li class="pub-item">
-              <div class="pub-title">
-                <a
-                  href="assets/publications/Halfway_Speculative_Decoding.pdf"
-                  target="_blank"
-                  rel="noopener"
-                  >Halfway Speculative Decoding: Direct Acceptance Rate Optimization with
-Joint Drafter-Target Training</a
-                >
-              </div>
-	      <div class="pub-authors">Sergiu Nistor</div>
-            </li>
-
-            <li class="pub-item">
-              <div class="pub-title">
-                <a
-                  href="https://openaccess.thecvf.com/content/CVPR2023W/NTIRE/html/Conde_Efficient_Deep_Models_for_Real-Time_4K_Image_Super-Resolution._NTIRE_2023_CVPRW_2023_paper.html"
-                  target="_blank"
-                  rel="noopener"
-                  >Efficient Deep Models for Real-Time 4K Image
-                  Super-Resolution</a
-                >
-              </div>
-              <div class="pub-authors">
-                Marcos V. Conde, Eduard Zamfir, Radu Timofte, Sergiu Nistor
-              </div>
-              <div class="pub-venue">CVPR, NTIRE</div>
-            </li>
-
-            <li class="pub-item">
-              <div class="pub-title">
-                <a
-                  href="assets/publications/Efficient_Deep_Single_Image_Super_Resolution_on_Mobile_Devices.pdf"
-                  target="_blank"
-                  rel="noopener"
-                  >Efficient Deep Single-Image Super-Resolution on Mobile
-                  Devices</a
-                >
-              </div>
-              <div class="pub-authors">Sergiu Nistor</div>
-            </li>
-
-            <li class="pub-item">
-              <div class="pub-title">
-                <a
-                  href="assets/publications/Resource_Streaming_Using_A_P2P_Architecture.pdf"
-                  target="_blank"
-                  rel="noopener"
-                >
-                  Resource Streaming using a Peer-to-Peer Architecture</a
-                >
-              </div>
-              <div class="pub-authors">Sergiu Nistor</div>
-            </li>
-          </ol>
-        </div>
-      </section>
-
-      <!-- SKILLS -->
-      <section id="skills" class="section section-alt">
-        <div class="container">
-          <h2 class="section-title">Skills</h2>
-          <div class="skills-grid">
-            <div class="skill-group">
-              <div class="skill-group-name">Languages</div>
-              <div class="skill-tags">
-                <span class="tag">Python</span>
-                <span class="tag">C</span>
-                <span class="tag">C++</span>
-                <span class="tag">Go</span>
-                <span class="tag">Mojo</span>
-                <span class="tag">Java</span>
-                <span class="tag">JavaScript</span>
-              </div>
-            </div>
-
-            <div class="skill-group">
-              <div class="skill-group-name">DL/ML</div>
-              <div class="skill-tags">
-				<span class="tag">DeepSpeed</span>
-                <span class="tag">PyTorch</span>
-                <span class="tag">Tensorflow</span>
-                <span class="tag">Keras</span>
-                <span class="tag">CUDA</span>
-                <span class="tag">scikit-learn</span>
-              </div>
-            </div>
-
-            <div class="skill-group">
-              <div class="skill-group-name">Training</div>
-              <div class="skill-tags">
-                <span class="tag">Pretraining</span>
-                <span class="tag">Distributed Training</span>
-                <span class="tag">PEFT</span>
-                <span class="tag">SFT</span>
-                <span class="tag">RLHF</span>
-                <span class="tag">RLAIF</span>
-                <span class="tag">DPO</span>
-                <span class="tag">GRPO</span>
-                <span class="tag">LoRA</span>
-                <span class="tag">QLoRA</span>
-                <span class="tag">Unsloth</span>
-              </div>
-            </div>
-
-            <div class="skill-group">
-              <div class="skill-group-name">GenAI</div>
-              <div class="skill-tags">
-                <span class="tag">Transformers</span>
-                <span class="tag">Diffusers</span>
-                <span class="tag">vLLM</span>
-                <span class="tag">LangChain</span>
-                <span class="tag">LangSmith</span>
-                <span class="tag">LangGraph</span>
-                <span class="tag">LlamaIndex</span>
-                <span class="tag">llama.cpp</span>
-              </div>
-            </div>
-
-            <div class="skill-group">
-              <div class="skill-group-name">Infrastructure</div>
-              <div class="skill-tags">
-                <span class="tag">Docker</span>
-                <span class="tag">Kubernetes</span>
-                <span class="tag">AWS</span>
-                <span class="tag">GCP</span>
-                <span class="tag">Azure</span>
-                <span class="tag">CDK</span>
-                <span class="tag">Terraform</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <!-- EXPERIENCE -->
       <section id="experience" class="section">
         <div class="container">
@@ -576,41 +545,78 @@ Joint Drafter-Target Training</a
         </div>
       </section>
 
-      <!-- EDUCATION -->
-      <section id="education" class="section section-alt">
+      <!-- SKILLS -->
+      <section id="skills" class="section section-alt">
         <div class="container">
-          <h2 class="section-title">Education</h2>
-          <div class="edu-grid">
-            <div class="edu-item">
-              <div class="edu-degree">M.S. in Computer Science</div>
-              <div class="edu-date">2021 - 2023</div>
-              <p class="edu-thesis">
-                <span class="edu-thesis-label">Thesis:</span>
-                <em
-                  >Efficient Deep Single-Image Super-Resolution on Mobile
-                  Devices</em
-                ><br/>
-                A study on deep learning-based methods for efficient mobile
-                SISR across multiple upscaling factors (×2, ×3, ×4), optimizing
-                first for PSNR then perceptual loss. Architectures were kept
-                deliberately shallow to minimize inference time, compensating
-                through increased width to maximize GPU parallelism.
-              </p>
+          <h2 class="section-title">Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-group">
+              <div class="skill-group-name">Languages</div>
+              <div class="skill-tags">
+                <span class="tag">Python</span>
+                <span class="tag">C</span>
+                <span class="tag">C++</span>
+                <span class="tag">Go</span>
+                <span class="tag">Mojo</span>
+                <span class="tag">Java</span>
+                <span class="tag">JavaScript</span>
+              </div>
             </div>
 
-            <div class="edu-item">
-              <div class="edu-degree">B.S. in Computer Science</div>
-              <div class="edu-date">2017 - 2021</div>
-              <p class="edu-thesis">
-                <span class="edu-thesis-label">Thesis:</span>
-                <em>Resource Streaming using a Peer-to-Peer Architecture</em><br/>
-                Proposed a decentralized P2P resource streaming framework with
-                no imposed hierarchy, eliminating single points of failure and
-                reducing privacy risk. The architecture uses locality-aware
-                distributed hash tables (LDHTs) for per-node network state and a
-                custom epidemic protocol for network-wide information
-                propagation.
-              </p>
+            <div class="skill-group">
+              <div class="skill-group-name">DL/ML</div>
+              <div class="skill-tags">
+				<span class="tag">DeepSpeed</span>
+                <span class="tag">PyTorch</span>
+                <span class="tag">Tensorflow</span>
+                <span class="tag">Keras</span>
+                <span class="tag">CUDA</span>
+                <span class="tag">scikit-learn</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <div class="skill-group-name">Training</div>
+              <div class="skill-tags">
+                <span class="tag">Pretraining</span>
+                <span class="tag">Distributed Training</span>
+                <span class="tag">PEFT</span>
+                <span class="tag">SFT</span>
+                <span class="tag">RLHF</span>
+                <span class="tag">RLAIF</span>
+                <span class="tag">DPO</span>
+                <span class="tag">GRPO</span>
+                <span class="tag">LoRA</span>
+                <span class="tag">QLoRA</span>
+                <span class="tag">Unsloth</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <div class="skill-group-name">GenAI</div>
+              <div class="skill-tags">
+                <span class="tag">Transformers</span>
+                <span class="tag">Diffusers</span>
+                <span class="tag">vLLM</span>
+                <span class="tag">LangChain</span>
+                <span class="tag">LangSmith</span>
+                <span class="tag">LangGraph</span>
+                <span class="tag">LlamaIndex</span>
+                <span class="tag">llama.cpp</span>
+              </div>
+            </div>
+
+            <div class="skill-group">
+              <div class="skill-group-name">Infrastructure</div>
+              <div class="skill-tags">
+                <span class="tag">Docker</span>
+                <span class="tag">Kubernetes</span>
+                <span class="tag">AWS</span>
+                <span class="tag">GCP</span>
+                <span class="tag">Azure</span>
+                <span class="tag">CDK</span>
+                <span class="tag">Terraform</span>
+              </div>
             </div>
           </div>
         </div>
