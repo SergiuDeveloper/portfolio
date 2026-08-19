@@ -117,6 +117,18 @@
 	            <div class="pub-authors"><b>Sergiu Nistor</b></div>
             </li>
 
+		<li class="pub-item">
+              <div class="pub-title">
+                <a
+                  href="assets/publications/U-ResBM.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  >U-ResBM: Rank-Decreasing Skip Connections for Communication-Efficient Pipeline Parallelism</a
+                >
+              </div>
+	            <div class="pub-authors"><b>Sergiu Nistor</b></div>
+            </li>
+
 	          <li class="pub-item">
               <div class="pub-title">
                 <a
@@ -496,6 +508,7 @@ Joint Drafter-Target Training</a
               <div class="timeline-desc">                <ul>
                   <li>Authored <b>DEX (Data-Emergent Experts)</b>, a dense MoE-inspired architecture with an embedding-based router that clusters the training corpus by document meaning and assigns each cluster its own expert, weighted by softmax similarity to cluster centroids, enabling on-demand capability removal by zeroing target experts while preserving retained knowledge</li>
                   <li>Authored <b>ReViB (Recovered Visual Bias)</b>, a training-free contrastive decoding method that inverts an LVLM's visual encoding back into image space via unCLIP to recover and subtract the model's statistical bias, reducing object and attribute hallucination</li>
+		  <li>Authored <b>U-ResBM (U-Shaped Residual Bottleneck Models)</b>, a pipeline-parallel architecture that restores high-rank information flow across compressed stage boundaries via long-range residuals between mirrored stages, whose rank scales with the span so transfers arrive just in time</li>
                   <li>Authored <b>Halfway Speculative Decoding</b>, proposing joint drafter-target training via LK loss optimization with cross-entropy regularization on the target, achieving competitive draft acceptance metrics using only 9\% of the training data required by prior approaches</li>
                 </ul>
               </div>
