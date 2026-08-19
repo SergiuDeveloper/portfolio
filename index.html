@@ -30,6 +30,8 @@
       href="assets/favicon/apple-touch-icon.png"
     />
     <link rel="manifest" href="assets/favicon/site.webmanifest" />
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   </head>
   <body>
     <!-- Google tag (gtag.js) -->
@@ -75,11 +77,12 @@
               ideas real.
             </p>
             <div class="about-links">
-              <a id="link-linkedin" target="_blank" rel="noopener">LinkedIn</a>
-              <a id="link-github" target="_blank" rel="noopener">GitHub</a>
-              <a id="link-blog" target="_blank" rel="noopener">Blog</a>
-              <a id="link-calendly" target="_blank" rel="noopener">Calendly</a>
-              <a id="link-email">Email</a>
+              <a id="link-linkedin" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+			  <a id="link-scholar" target="_blank" rel="noopener"><i class="fa-solid fa-graduation-cap"></i> Scholar</a>
+              <a id="link-github" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a>
+              <a id="link-blog" target="_blank" rel="noopener"><i class="fa-solid fa-blog"></i> Blog</a>
+              <a id="link-calendly" target="_blank" rel="noopener"><i class="fa-regular fa-calendar"></i> Calendly</a>
+              <a id="link-email"><i class="fa-regular fa-envelope"></i> Email</a>
             </div>
           </div>
           <div class="about-photo">
@@ -818,6 +821,7 @@ Joint Drafter-Target Training</a
         name: "Sergiu Nistor",
         email: "sergiunistor.info@gmail.com",
         linkedin: "https://www.linkedin.com/in/sergiu-nistor-76786014a/",
+		scholar: "https://scholar.google.com/citations?user=jy6BWNoAAAAJ",
         github: "https://github.com/SergiuDeveloper/",
         calendly: "https://calendly.com/sergiunistor/30min",
         blog: "https://sergiunistor.substack.com/",
@@ -834,6 +838,7 @@ Joint Drafter-Target Training</a
       document.getElementById("link-email").href = "mailto:" + CONFIG.email;
       document.getElementById("link-linkedin").href = CONFIG.linkedin;
       document.getElementById("link-calendly").href = CONFIG.calendly;
+	  document.getElementById("link-scholar").href = CONFIG.scholar;
       document.getElementById("link-blog").href = CONFIG.blog;
       document.getElementById("link-github").href = CONFIG.github;
 
