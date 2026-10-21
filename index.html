@@ -52,8 +52,8 @@
           <li><a href="#about">About</a></li>
           <li><a href="#papers">Papers</a></li>
           <li><a href="#education">Education</a></li>
+	  <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#experience">Experience</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#certifications">Certifications</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -240,9 +240,84 @@ Joint Drafter-Target Training</a
         </div>
       </section>
 
+      <!-- EXPERIENCE -->
+      <section id="experience" class="section-alt">
+        <div class="container">
+          <h2 class="section-title">Experience</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-header">
+                <span class="timeline-role">Independent ML Researcher</span>
+                <span class="timeline-date">2025 - Present</span>
+              </div>
+              <div class="timeline-desc">                <ul>
+                  <li>Authored <b>DEX (Data-Emergent Experts)</b>, a dense MoE-inspired architecture with an embedding-based router that clusters the training corpus by document meaning and assigns each cluster its own expert, weighted by softmax similarity to cluster centroids, enabling on-demand capability removal by zeroing target experts while preserving retained knowledge</li>
+                  <li>Authored <b>ReViB (Recovered Visual Bias)</b>, a training-free contrastive decoding method that inverts an LVLM's visual encoding back into image space via unCLIP to recover and subtract the model's statistical bias, reducing object and attribute hallucination</li>
+		  <li>Authored <b>U-ResBM (U-Shaped Residual Bottleneck Models)</b>, a pipeline-parallel architecture that restores high-rank information flow across compressed stage boundaries via long-range residuals between mirrored stages, whose rank scales with the span so transfers arrive just in time</li>
+                  <li>Authored <b>Halfway Speculative Decoding</b>, proposing joint drafter-target training via LK loss optimization with cross-entropy regularization on the target, achieving competitive draft acceptance metrics using only 9\% of the training data required by prior approaches</li>
+                  <li>Reviewer for:
+                    <ul>
+                      <li>NeurIPS 2026 NewInML Workshop</li>
+                      <li>NeurIPS 2026 ATTRIB Workshop</li>
+                      <li>NeurIPS 2026 AI4GOOD Workshop</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-header">
+                <span class="timeline-role">Senior Software/AI Engineer</span>
+                <span class="timeline-date">2024 - Present</span>
+              </div>
+              <div class="timeline-company">Spotted Zebra</div>
+              <div class="timeline-desc">
+                Designed and shipped agentic AI systems across the full stack, from architecture through production:
+                <ul>
+                  <li>Built agentic AI pipelines end-to-end, including monitoring and observability</li>
+                  <li>Played a major role in the company's agentic AI transition, contributing to technical direction and architecture decisions</li>
+                  <li>Implemented embedding model-based semantic indexing and retrieval systems</li>
+                  <li>Actively consulted on AI and data science decisions, shaping how the team approached and integrated intelligent systems</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-header">
+                <span class="timeline-role">Software Development/DevOps Engineer</span>
+                <span class="timeline-date">2021 - 2023</span>
+              </div>
+              <div class="timeline-company">Amazon</div>
+              <div class="timeline-desc">
+                Built and maintained the data infrastructure and pipelines powering a deep learning system serving millions of users worldwide:
+                <ul>
+                  <li>Handled massive data volumes across distributed systems, ensuring data quality, feature reliability, and pipeline integrity that models directly depended on</li>
+                  <li>Actively consulted the ML team on causality analysis algorithms and contributing technical input throughout the model design and development process</li>
+                  <li>Managed complex DevOps workflows and large-scale deployment pipelines for global production systems</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="timeline-item">
+              <div class="timeline-header">
+                <span class="timeline-role">Intern Software Development/DevOps Engineer</span>
+                <span class="timeline-date">2020 - 2020</span>
+              </div>
+              <div class="timeline-company">Amazon</div>
+              <div class="timeline-desc">
+                Designed and built an AI chatbot capable of knowledge retrieval and contextual answer formulation, delivered end-to-end:
+                <ul>
+                  <li>Architected a scalable, production-grade system from scratch, owning the full pipeline from design through deployment</li>
+                </ul>
+              </div>
+            </div>
+        </div>
+      </section>
+
       <!-- PROJECTS -->
       <!-- Social preview generated with https://socialify.git.ci/ -->
-      <section id="projects" class="section section-alt">
+      <section id="projects" class="section section">
         <div class="container">
           <h2 class="section-title">Projects</h2>
           <div class="card-grid">
@@ -499,81 +574,6 @@ Joint Drafter-Target Training</a
               </div>
             </a>
           </div>
-        </div>
-      </section>
-
-      <!-- EXPERIENCE -->
-      <section id="experience" class="section">
-        <div class="container">
-          <h2 class="section-title">Experience</h2>
-          <div class="timeline">
-            <div class="timeline-item">
-              <div class="timeline-header">
-                <span class="timeline-role">Independent ML Researcher</span>
-                <span class="timeline-date">2025 - Present</span>
-              </div>
-              <div class="timeline-desc">                <ul>
-                  <li>Authored <b>DEX (Data-Emergent Experts)</b>, a dense MoE-inspired architecture with an embedding-based router that clusters the training corpus by document meaning and assigns each cluster its own expert, weighted by softmax similarity to cluster centroids, enabling on-demand capability removal by zeroing target experts while preserving retained knowledge</li>
-                  <li>Authored <b>ReViB (Recovered Visual Bias)</b>, a training-free contrastive decoding method that inverts an LVLM's visual encoding back into image space via unCLIP to recover and subtract the model's statistical bias, reducing object and attribute hallucination</li>
-		  <li>Authored <b>U-ResBM (U-Shaped Residual Bottleneck Models)</b>, a pipeline-parallel architecture that restores high-rank information flow across compressed stage boundaries via long-range residuals between mirrored stages, whose rank scales with the span so transfers arrive just in time</li>
-                  <li>Authored <b>Halfway Speculative Decoding</b>, proposing joint drafter-target training via LK loss optimization with cross-entropy regularization on the target, achieving competitive draft acceptance metrics using only 9\% of the training data required by prior approaches</li>
-                  <li>Reviewer for:
-                    <ul>
-                      <li>NeurIPS 2026 NewInML Workshop</li>
-                      <li>NeurIPS 2026 ATTRIB Workshop</li>
-                      <li>NeurIPS 2026 AI4GOOD Workshop</li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-header">
-                <span class="timeline-role">Senior Software/AI Engineer</span>
-                <span class="timeline-date">2024 - Present</span>
-              </div>
-              <div class="timeline-company">Spotted Zebra</div>
-              <div class="timeline-desc">
-                Designed and shipped agentic AI systems across the full stack, from architecture through production:
-                <ul>
-                  <li>Built agentic AI pipelines end-to-end, including monitoring and observability</li>
-                  <li>Played a major role in the company's agentic AI transition, contributing to technical direction and architecture decisions</li>
-                  <li>Implemented embedding model-based semantic indexing and retrieval systems</li>
-                  <li>Actively consulted on AI and data science decisions, shaping how the team approached and integrated intelligent systems</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-header">
-                <span class="timeline-role">Software Development/DevOps Engineer</span>
-                <span class="timeline-date">2021 - 2023</span>
-              </div>
-              <div class="timeline-company">Amazon</div>
-              <div class="timeline-desc">
-                Built and maintained the data infrastructure and pipelines powering a deep learning system serving millions of users worldwide:
-                <ul>
-                  <li>Handled massive data volumes across distributed systems, ensuring data quality, feature reliability, and pipeline integrity that models directly depended on</li>
-                  <li>Actively consulted the ML team on causality analysis algorithms and contributing technical input throughout the model design and development process</li>
-                  <li>Managed complex DevOps workflows and large-scale deployment pipelines for global production systems</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="timeline-item">
-              <div class="timeline-header">
-                <span class="timeline-role">Intern Software Development/DevOps Engineer</span>
-                <span class="timeline-date">2020 - 2020</span>
-              </div>
-              <div class="timeline-company">Amazon</div>
-              <div class="timeline-desc">
-                Designed and built an AI chatbot capable of knowledge retrieval and contextual answer formulation, delivered end-to-end:
-                <ul>
-                  <li>Architected a scalable, production-grade system from scratch, owning the full pipeline from design through deployment</li>
-                </ul>
-              </div>
-            </div>
         </div>
       </section>
 
